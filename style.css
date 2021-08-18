@@ -1,0 +1,182 @@
+*, :before, :after{
+    margin: 0;
+    padding: 0;
+    
+}
+
+a, li{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+body{
+    background-color: #181C1F;
+    color: white;
+    width: 100%;   
+
+    font-size: 16px;
+}
+
+/* Header */
+
+
+header{
+    background-color: #34393F;
+}
+
+.my_name{
+    width: 70%;
+    height:20px;
+    margin: 0 auto;
+    padding-top: 24px;
+    font-size: 24px;
+    
+    font-weight: bold;
+}
+
+.me{
+    /* background-color: red; */
+    height: 400px;
+
+    width: 70%;
+    
+    margin: 0 auto;
+
+    display:grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+
+.about_bio_container{
+    /* background-color: red; */
+   
+    margin: auto 0;
+    
+    
+}
+
+.bio_heading{
+    font-size: 48px;
+
+    margin-bottom: 8px;
+}
+
+
+
+.my_face{
+    width: 340px;
+    border-radius: 6px;
+
+    margin:auto auto;
+
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+
+    border-radius: 6px;
+}
+
+main section{
+    margin-top: 100px;    
+}
+
+.languages{
+    list-style-type: none;
+}
+
+/* Launguages and Frameworks */
+
+.languages{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 16px;
+
+    font-size: 24px;
+
+       
+}
+
+.languages li:not(:first-child) {
+    margin-left: 16px;
+}
+
+/* Portfolio */
+.portfolio h2{
+    margin-bottom: 16px;
+}
+.portfolio_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.project_card{
+    padding: 16px 32px 32px 16px;
+    text-align: center;
+    background-color: #34393F;
+    color: white;
+    border-radius: 12px;
+}
+
+.project_card p{
+    margin-top: 8px;
+}
+
+
+/* Daily UI */
+
+.daily_ui_container{
+    display: grid;
+    grid-template-columns: 0.34fr 0.34fr 0.34fr;
+}
+
+.daily_ui{
+    
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* Footer */
+
+footer{
+    height: 120px;
+    padding-top: 24px;
+    margin-top: 40px;
+    background-color:  #34393F;
+}
+
+.socials{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    
+    justify-content: center;
+    
+}
+
+.linkedin{
+   
+    width: 57px;
+}
+
+.polywork{
+    width: 48px;
+    margin-right: 32px;
+
+}
+
+.social_icon{
+    background-color: #181C1F;
+    
+    padding: 16px;
+    border-radius: 8px;
+}
