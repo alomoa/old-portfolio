@@ -1,8 +1,63 @@
+/* 
+    Make it lean as possible reduce the number of words done DONE
+        Alom alam
+        Front end developer
+        Hello, I'm Alom Alam, im a front end developer
+    
+    give card buttons with example and source code
+
+    Center the stuff when at lower resolution
+
+    Have a better typography
+        increase the size and distinctions between headings and texts
+    
+    make the cards thinner at different breakpoints
+    consider giving UI cards
+
+    have a section called experiments or playground, stuff that is just general 
+    stuff that they like to
+
+    had alot more spacing between some the heading so 
+
+*/
 *, :before, :after{
     margin: 0;
     padding: 0;
     
 }
+:root{
+    --card-color: #34393F;
+    --card-border: border: 1px solid #45484C;
+    --card-shadow: 4px 4px 18px rgba(0, 0, 0, 0.62); 
+}
+
+/* Font size */
+html {
+    font-size: 14px;
+    font-family: 'lato', sans-serif;
+}
+ 
+@media screen and (min-width: 320px) {
+    html {
+      font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+  }
+
+  h2{
+      font-size: 2.5em;
+      font-weight: bold;
+  }
+
+  h3{
+      font-size: 1.5em;
+  }
+
+
 
 a, li{
     text-decoration: none;
@@ -17,74 +72,67 @@ body{
     color: white;
     width: 100%;   
 
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
 /* Header */
 
 
 header{
+    
     background-color: #34393F;
 }
 
-.my_name{
-    width: 70%;
-    height:20px;
-    margin: 0 auto;
-    padding-top: 24px;
-    font-size: 24px;
-    
-    font-weight: bold;
-}
 
-.me{
+.about_me_section{
     /* background-color: red; */
-    height: 400px;
+    height: 20em;
 
-    width: 70%;
+    padding: 5em 15%;
     
-    margin: 0 auto;
+    margin: auto auto;
 
-    display:grid;
+    /* display:grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; */
 
     
 }
 
-.about_bio_container{
+.about_me_text_container{
     /* background-color: red; */
    
     margin: auto 0;
+    font-size:3em;
+    font-weight: bold;
+   
+}
+
+.my_name{
     
-    
-}
+    /* font-size: 48px; */
 
-.bio_heading{
-    font-size: 48px;
-
-    margin-bottom: 8px;
-}
-
-
-
-.my_face{
-    width: 340px;
-    border-radius: 6px;
-
-    margin:auto auto;
+    /* margin-bottom: 0.1em; */
 
 }
 
+.slogan{
+    /* font-size: 1.2em; */
+}
+
+
+
+/* Main */
 main{
-    width: 70%;
+    
+    padding: 0 15%;
     margin: 0 auto;
 
     border-radius: 6px;
 }
 
 main section{
-    margin-top: 100px;    
+    margin-top: 4em;    
 }
 
 .languages{
@@ -94,62 +142,157 @@ main section{
 /* Launguages and Frameworks */
 
 .languages{
+    max-width: 30em;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 1em;
+    /* align-content: space-between; */
     
-    margin-top: 16px;
+    margin-top: 0.7em;
 
-    font-size: 24px;
-
-       
+    font-size: 1.1em; 
 }
 
-.languages li:not(:first-child) {
-    margin-left: 16px;
+.languages:after{
+    content: "";
+    
+    flex:auto; 
+}
+
+.languages li {
+    padding: 1em;
+    background-color: #34393F;
+    box-shadow: rgba(0, 0, 0, 0.5) ;
+    border-radius: 8px;
 }
 
 /* Portfolio */
 .portfolio h2{
-    margin-bottom: 16px;
+    margin-bottom: 0.7em;
 }
+
 .portfolio_container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
+    gap: 0.7em; */
+
+    /* background-color: red; */
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em; 
+}
+
+.portfolio_container:after{
+    content: "";
+    flex: auto;
 }
 
 .project_card{
-    padding: 32px 32px 32px 32px;
+
+    width: 100%;
+    /* height: 16em; */
+    display: flex;
+    flex-direction: column;
     /* text-align: center; */
-    background-color: #34393F;
-    color: white;
+    background-color: var(--card-color);
+    border: var(--card-border);
     border-radius: 12px;
+
+    box-shadow: var(--card-shadow);
+
+    color: white;
+
+    /* padding: 1.4em; */
+
+    justify-self: revert;
+}
+
+.card_content{
+    padding: 0 1.6em;
 }
 
 .project_card img{
-    border: 1px solid white;
-    border-radius: 8px;
+    object-fit:contain;
+    width: 100%;
+    /* border: 1px solid white; */
+    border-radius: 8px 8px 0 0 ;
 }
 
 .project_card h3{
-    margin-top: 16px;
+    margin-top: 1.375em;
+    
 }
 .project_card p{
-    margin-top: 8px;
+    font-size: 0.9em;
+    margin-top: 0.36em;
+    margin-bottom: 2em;
+}
+.project_card button{
+    padding: .7em 0;
 }
 
+.single_button{  
+    width: 100%;
+    margin-top: auto; 
+    border: none;
+    border-radius: 0 0 8px 8px;
+}
+
+
+
+.project_multi_buttons{
+    display: flex;
+    flex-direction: row;
+}
+.project_multi_buttons a{
+    width: 50%;
+}
+
+.project_multi_buttons button{
+    width: 100%;
+    border:none;
+}
+
+.project_multi_buttons .left_button{
+    border-radius: 0 0 0 8px;
+    border-right: 2px solid grey;
+}
+.project_multi_buttons .right_button{
+    border-radius: 0 0 8px 0;
+}
 
 /* Daily UI */
 
 .daily_ui_container{
-    display: grid;
-    grid-template-columns: 0.34fr 0.34fr 0.34fr;
+    /* display: grid;
+    grid-template-columns: 0.34fr 0.34fr 0.34fr; */
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+}
+
+.daily_ui_card{
+    /* padding: 1em; */
+    background-color: var(--card-color);
+    border: var(--card-border);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.daily_ui_card h3 {
+    padding: 1em 1em;
 }
 
 .daily_ui{
     
-    height: 100%;
     width: 100%;
+    border-radius: 8px 8px 0 0;
     
 }
 
@@ -188,3 +331,12 @@ footer{
     padding: 16px;
     border-radius: 8px;
 }
+
+@media screen and (max-width:610px) {
+    .languages{
+        height: 7em;
+    }
+}
+
+
+    

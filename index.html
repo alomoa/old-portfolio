@@ -6,23 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <p class="my_name">Alom Alam</p>
-
-        <section class="me">
+        <section class="about_me_section">
     
-            <img src="./Asset/Face.png" alt="My face" class="my_face">
+            <!-- <img src="./Asset/Face.png" alt="My face" class="my_face"> -->
     
-            <div class="about_bio_container">
-                <p class="bio_heading">
-                    Front end developer
-                </p> 
-                <p class="about_me">
-                    1-2 sentences about me
-                </p>
+            <div class="about_me_text_container">
+                <p>Hi,<br> My name is Alom Alam, <br>I'm a front end developer</p>
             </div>
             
         </section>
@@ -37,10 +33,10 @@
 
             <ul class="languages">
                 
-                <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Javascript</li>
                 <li>React</li>
+                <li>HTML5</li>
                 <li>NodeJS</li>
             </ul>
     
@@ -55,40 +51,92 @@
             
                 <div class="project_card">
                     <img src="/Asset/Portfolio/Job board.png" alt="">
-                    <h3>Jobs Board</h3>
-                    <p>WordPress website created to post kickstart scheme jobs</p>
+                    <div class="card_content">
+                        <h3>Jobs Board</h3>
+                        <p>WordPress website created to post kickstart scheme jobs</p>
+                    </div>
+                    <a href="https://jobs.nptraining.co.uk/" target="_blank">
+                        <button class="single_button">
+                            Visit Site
+                        </button>
+                    </a>
                 </div>
 
                 <div class="project_card">
                 <img src="/Asset/Portfolio/Weather.png" alt="">
-                    <h3>Weather App</h3>
-                    <p>Simple website made with node that returns the weather given a location</p>
+                    <div class="card_content">
+                        <h3>Weather App</h3>
+                        <p>Simple website made with node that returns the weather given a location</p>
+                    </div>
+                    <div class="project_multi_buttons">
+                        <a href="https://github.com/alomoa/weather-website"  target="_blank">
+                            <button class="left_button">
+                                Visit GitHub
+                            </button>
+                        </a>
+                        <a href="https://alam-weather-app.herokuapp.com/" target="_blank">
+                            <button class="right_button">
+                                Visit Site
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 
                 <div class="project_card">
                     <img src="/Asset/Portfolio/Chat App.png" alt="">
-                    <h3>Chat App</h3>
-                    <p>Simple website made with node that allows users to create and join
-                        exisitng chat rooms.
-                    </p>    
+                    <div class="card_content">
+                        <h3>Chat App</h3>
+                        <p>Simple website made with node that allows users to create and join
+                            exisitng chat rooms.
+                        </p>    
+                        
+                    </div>
+                    <div class="project_multi_buttons">
+                        <a href="https://github.com/alomoa/chat-app"  target="_blank">
+                            <button class="left_button">
+                                Visit GitHub
+                            </button>
+                        </a>
+                        <a href="https://ma-chat-app.herokuapp.com/" target="_blank">
+                            <button class="right_button">
+                                Visit Site
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 
                 <div class="project_card">
                     <img src="/Asset/Portfolio/Markdown.png" alt="">
-                    <h3>Markdown Previwer</h3>
-                    <p>
-                        Simple webapp that translates markdown do HTML using MarkedJS
-                    </p>
+                    <div class="card_content">
+                        
+                        <h3>Markdown Previwer</h3>
+                        <p>
+                            Simple webapp that translates markdown do HTML using MarkedJS
+                        </p>
+                    </div>
+                    <a href="https://codepen.io/alomoa/full/JjRgaoM" target="_blank">
+                        <button class="single_button">
+                            Visit Site
+                        </button>
+                    </a>
                 </div>
                 
                 <div class="project_card">
                     <img src="/Asset/Portfolio/Calculator.png" alt="">
-                    <h3>Calculator</h3>
-                    <p>
-                        Basic Calculator
-                    </p>
+                    <div class="card_content">
+                        
+                        <h3>Calculator</h3>
+                        <p>
+                            Basic Calculator
+                        </p>
+                    </div>
+                    <a href="https://codepen.io/alomoa/full/vYyLQzq" target="_blank">
+                        <button class="single_button">
+                            Visit Site
+                        </button>
+                    </a>
                 </div>
                 
                 <!-- <div class="project_card">
@@ -109,12 +157,33 @@
             <p>Explanation</p>
 
             <div class="daily_ui_container">
-                <img class="daily_ui" src="/Asset/dailyui/Desktop - 10Daily.png" alt="Design of a plushee shop, Buddys" >
-                <img class="daily_ui" src="/Asset/dailyui/Desktop - 4Daily.png" alt="" >
-                <img class="daily_ui" src="/Asset/dailyui/Desktop - 5Daily.png" alt="" >
-                <img class="daily_ui" src="/Asset/dailyui/Desktop - 6Daily.png" alt="" >
-                <img class="daily_ui" src="/Asset/dailyui/Desktop - 8Daily.png" alt="" >
-                <img class="daily_ui" src="/Asset/dailyui/image 3Daily.png" alt="" >
+                <div class="daily_ui_card">
+                    <img class="daily_ui" src="/Asset/dailyui/Desktop - 10Daily.png" alt="Design of a plushee shop, Buddys"> 
+                    <h3>Background Pattern</h3>
+                </div>
+                <div class="daily_ui_card">
+                    <img class="daily_ui" src="/Asset/dailyui/Desktop - 4Daily.png" alt="" >
+                    <h3>E-Commerce Shop</h3>
+                </div>
+
+                <div class="daily_ui_card">
+                    <img class="daily_ui" src="/Asset/dailyui/Desktop - 5Daily.png" alt="" >
+                    <h3>TV App Gallery</h3>
+                </div>
+
+                <div class="daily_ui_card">
+                    <img class="daily_ui" src="/Asset/dailyui/Desktop - 6Daily.png" alt="" >
+                    <h3>Crowd Funding</h3>
+                </div>
+
+                <div class="daily_ui_card">
+                    <img class="daily_ui" src="/Asset/dailyui/Desktop - 8Daily.png" alt="" >
+                    <h3>Press Page</h3>                    
+                </div>
+                <div class="daily_ui_card">
+                    <img class="daily_ui" src="/Asset/dailyui/image 3Daily.png" alt="" >
+                    <h3>Video Player</h3>    
+                </div>
             </div>
             
 
