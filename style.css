@@ -4,25 +4,30 @@
         Front end developer
         Hello, I'm Alom Alam, im a front end developer
     
-    give card buttons with example and source code
+    give card buttons with example and source code DONE
 
-    Center the stuff when at lower resolution
+    Center the stuff when at lower resolution DONE
 
-    Have a better typography
+    Have a better typography DONE
         increase the size and distinctions between headings and texts
     
-    make the cards thinner at different breakpoints
-    consider giving UI cards
+    make the cards thinner at different breakpoints DONE
+    consider giving UI cards DONE
 
     have a section called experiments or playground, stuff that is just general 
     stuff that they like to
 
-    had alot more spacing between some the heading so 
+    had alot more spacing between some the heading so DONE
 
     give portfolio button padding and make it bigger DONE
     more spacing between headings
 
     give polywork logo image a border of 2-4p DONE
+
+    08/09
+    Change Close button
+    Add responsiveness to images
+    Add responsiveness to portfolio buttons
 
 */
 *, :before, :after{
@@ -30,6 +35,13 @@
     padding: 0;
     
 }
+
+
+
+button{
+    cursor: pointer;
+}
+
 :root{
     --card-color: #34393F;
     --card-border: border: 1px solid #45484C;
@@ -281,6 +293,16 @@ main section{
     gap: 2em;
 }
 
+.daily_ui_container button{
+    background-color: inherit;
+    border-radius:  8px 8px 0 0 ;
+    border: none;    
+}
+
+.daily_ui_button:hover{
+    cursor: pointer;
+}
+
 .daily_ui_card{
     /* padding: 1em; */
     background-color: var(--card-color);
@@ -294,11 +316,64 @@ main section{
 }
 
 .daily_ui{
-    
+    box-sizing: border-box;
     width: 100%;
     border-radius: 8px 8px 0 0;
     
 }
+
+/* popup */
+
+/*
+    .popup_image
+
+    .popup_image img
+
+    .popip_image button
+
+*/
+
+.popup_image{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+        
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 99.5vw;
+    height: 100.15vh;
+    background-color: rgba(24,28,31, 0.85) ;
+    
+}
+
+.popup_image img{
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    width:90vw;
+    
+    margin: auto auto;
+}
+
+.popup_image button {
+
+    margin-left: auto;
+    
+
+    padding: .7em 1em;
+    font-weight:900;
+    text-align: center;
+
+    border:none;
+
+    border-radius: 0 0 0 3px;
+
+
+}
+
+
+
+
 
 /* Footer */
 
@@ -429,6 +504,33 @@ footer{
         
     }
 
+    .popup_image img {
+        
+        width: 60vw;
+        margin: auto auto;
+    }
+
+    .popup_image{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        
+        
+    }
+    
+    .popup_image button{
+        /* width: 2%; */
+        /* margin-right: .7em; */
+        
+        padding: .5em 1.2em;
+    
+        
+    }
     .portfolio_container::after{
         content: "";
         flex: auto;
