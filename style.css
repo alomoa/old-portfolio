@@ -28,8 +28,43 @@
     Make 100 days a subsection of lab DONE
     Change Close button looks DO I HAVE TO?
     Add responsiveness to images DONE
-    Add responsiveness to portfolio buttons
+    Add responsiveness to portfolio buttons DONE
     Make buttons look pretty
+
+    09/09
+    Dont put two I'ms, remove the second i'm
+    3:09:41?? DONE
+    
+    when the portfolio columns get too thin, 
+    the iamges get too small. make it so that 
+    it's 2 columns, not 3. DONE
+
+    
+    Cosider using icons on the portfolio buttons,
+    if not then unbold the buttons, too much. DONE
+    
+    100 days title is too big compared to lab,
+    make it smaller DONE
+    
+    
+    Either make the whole dailyUI card move
+    or dont make it a card anymore, or make
+    the image scale without the overflow
+    If you take it off. align the text left DONE
+    
+
+    Make the 100 days explenation succinct DONE
+    Maybe make screenshots better
+
+    Starker contrast could be abit better: DONE?
+        make background darker
+
+    
+
+
+
+
+
 
 */
 *, :before, :after{
@@ -45,8 +80,9 @@ button{
 
 :root{
     --card-color: #34393F;
-    --card-border: border: 1px solid #45484C;
+    --card-border: 1px solid #45484C;
     --card-shadow: 4px 4px 18px rgba(0, 0, 0, 0.62); 
+    --background-color: #141313;
 }
 
 /* Font size */
@@ -66,14 +102,15 @@ html {
     }
   }
 
-  h2{
-      font-size: 2.5em;
-      font-weight: bold;
-  }
+h2{
+    font-size: 2.5em;
+    font-weight: bold;
+}
 
-  h3{
-      font-size: 1.5em;
-  }
+.card_title{
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 
 
@@ -85,8 +122,13 @@ a:visited{
     color: white;
 }
 
+a{
+    text-decoration: underline;
+
+}
+
 body{
-    background-color: #181C1F;
+    background-color: var(--background-color);
     color: white;
     width: 100%;   
 
@@ -140,6 +182,10 @@ main{
 
 main section{
     margin-top: 10em;    
+}
+
+main .skills{
+    margin-top: 4em;
 }
 
 section h2{
@@ -206,7 +252,7 @@ section h2{
     flex-direction: column;
     /* text-align: center; */
     background-color: var(--card-color);
-    border: var(--card-border);
+    
     border-radius: 12px;
 
     box-shadow: var(--card-shadow);
@@ -227,11 +273,11 @@ section h2{
 }
 
 
-.project_card h3{
+.project_card .card_title{
     margin-top: 1.375em;
     
 }
-.project_card p{
+.project_card_description{
     font-size: 0.9em;
     margin-top: 0.36em;
     margin-bottom: 2em;
@@ -241,11 +287,12 @@ section h2{
     padding: 1em 0;
 
     font-size: 1.1em;
-    font-weight:bold;
+    font-weight:500;
     background-color: #EEECEF;
 }
 
 .project_card button:hover{
+
     background-color: #BDB6C2;
 }
 
@@ -301,11 +348,11 @@ section h2{
 /* Daily UI */
 
 .daily_ui_h3{
-    margin-bottom: .7em;
+    margin-bottom: .7em !important;
 }
 
 .daily_ui_p{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .daily_ui_container{
@@ -321,36 +368,40 @@ section h2{
     background-color: inherit;
     border-radius:  8px 8px 0 0 ;
     border: none;    
-}
-
-.daily_ui_button:hover{
     cursor: pointer;
+    
 }
 
 .daily_ui_card{
     /* padding: 1em; */
     background-color: var(--card-color);
-    border: var(--card-border);
+    
     border-radius: 8px;
     box-shadow: var(--card-shadow);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.daily_ui_card:hover{
+    transform: scale(1.05);
+    border-radius: 8px;
 }
 
 .daily_ui{
     object-fit:contain;
     width: 100%;
-    /* border: 1px solid white; */
+    
     border-radius: 8px 8px 0 0 ;
-    transition: transform 1s, border-radius 1s;
+    
     
 }
 
 .daily_ui_card img:hover{
     /* border: 1px solid red; */
-    box-shadow: var(--card-shadow);
-    transform: scale(1.05);
-    border-radius: 8px;
+    /* box-shadow: var(--card-shadow); */
+    
 }
-.daily_ui_card h3 {
+.daily_ui_card .card_title {
     padding: 1em 1em;
 }
 
@@ -535,9 +586,7 @@ footer{
         
     }
 
-    .project_card{
-        width: 30%;
-    }
+    
 
     .daily_ui_card{
         width: 46%;
@@ -582,6 +631,12 @@ footer{
         height: 5em;
     }
 }
+
+@media screen and (min-width:1800px){
+    .project_card{
+        width: 30%;
+    }
+} 
 
 
     
