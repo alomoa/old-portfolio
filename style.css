@@ -396,11 +396,7 @@ section h2{
     
 }
 
-.daily_ui_card img:hover{
-    /* border: 1px solid red; */
-    /* box-shadow: var(--card-shadow); */
-    
-}
+
 .daily_ui_card .card_title {
     padding: 1em 1em;
 }
