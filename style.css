@@ -345,23 +345,10 @@ section h2{
 }
 
 /* Lab */
-.lab_p{
-    margin-bottom: 1em;
-}
-
-/* ThreeJS */
-.threejs{
-    margin-bottom: 4em;
-}    
-/* Daily UI */
-
 .lab_h3{
     margin-bottom: .7em !important;
 }
 
-.daily_ui_p{
-    margin-bottom: 2em;
-}
 
 .lab_container{
     /* display: grid;
@@ -414,6 +401,23 @@ section h2{
     width: 100%;
     border-radius: 8px 8px 0 0;
     
+}
+.lab_p{
+    margin-bottom: 1em;
+}
+
+/* ThreeJS */
+.threejs{
+    margin-bottom: 4em;
+}    
+/* Daily UI */
+
+.daily_ui_p{
+    margin-bottom: 2em;
+}
+
+.design_challenge h3 {
+    text-decoration: underline;
 }
 
 /* popup */
