@@ -1,5 +1,5 @@
 
-const dailyUIButtons = document.querySelectorAll('.daily_ui_card');
+const dailyUIButtons = document.querySelectorAll('.design_challenge .lab_card');
 const main = document.querySelector('main');
 
 
