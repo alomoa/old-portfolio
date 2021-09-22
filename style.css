@@ -112,7 +112,10 @@ h2{
     font-weight: bold;
 }
 
-
+a:-webkit-any-link{
+    text-decoration: none;
+    color: white;
+}
 
 a, li{
     text-decoration: none;
@@ -124,7 +127,6 @@ a:visited{
 
 a{
     text-decoration: underline;
-
 }
 
 body{
@@ -275,8 +277,10 @@ section h2{
 
 .project_card .card_title{
     margin-top: 1.375em;
-    
+    color: white;
 }
+
+
 .project_card_description{
     font-size: 0.9em;
     margin-top: 0.36em;
@@ -345,9 +349,13 @@ section h2{
     margin-bottom: 1em;
 }
 
+/* ThreeJS */
+.threejs{
+    margin-bottom: 4em;
+}    
 /* Daily UI */
 
-.daily_ui_h3{
+.lab_h3{
     margin-bottom: .7em !important;
 }
 
@@ -355,7 +363,7 @@ section h2{
     margin-bottom: 2em;
 }
 
-.daily_ui_container{
+.lab_container{
     /* display: grid;
     grid-template-columns: 0.34fr 0.34fr 0.34fr; */
 
@@ -364,7 +372,7 @@ section h2{
     gap: 2em;
 }
 
-.daily_ui_container button{
+.lab_container button{
     background-color: inherit;
     border-radius:  8px 8px 0 0 ;
     border: none;    
@@ -372,7 +380,7 @@ section h2{
     
 }
 
-.daily_ui_card{
+.lab_card{
     /* padding: 1em; */
     background-color: var(--card-color);
     
@@ -382,12 +390,12 @@ section h2{
     cursor: pointer;
 }
 
-.daily_ui_card:hover{
+.lab_card:hover{
     transform: scale(1.05);
     border-radius: 8px;
 }
 
-.daily_ui{
+.lab_card img{
     object-fit:contain;
     width: 100%;
     
@@ -397,11 +405,11 @@ section h2{
 }
 
 
-.daily_ui_card .card_title {
+.lab_card .card_title {
     padding: 1em 1em;
 }
 
-.daily_ui{
+.lab_card img{
     box-sizing: border-box;
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -544,7 +552,7 @@ footer{
         width: 46%;
     }
 
-    .daily_ui_card{
+    .lab_card{
         width: 46%;
         
     }
@@ -584,7 +592,7 @@ footer{
 
     
 
-    .daily_ui_card{
+    .lab_card{
         width: 46%;
         
     }
