@@ -134,7 +134,7 @@ body{
     color: white;
     width: 100%;   
 
-    /* font-size: 16px; */
+ 
 }
 
 /* Header */
@@ -147,22 +147,20 @@ header{
 
 
 .about_me_section{
-    /* background-color: red; */
+    
     height: 20em;
 
     padding: 5em 15%;
     
     margin: auto auto;
 
-    /* display:grid;
-
-    grid-template-columns: 1fr 1fr; */
+    
 
     
 }
 
 .about_me_text_container{
-    /* background-color: red; */
+    
    
     margin: auto 0;
     font-size:3em;
@@ -204,20 +202,15 @@ section h2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    
     gap: 1em;
-    /* align-content: space-between; */
+    
     
     margin-top: 0.7em;
 
     font-size: 1.1em; 
 }
 
-/* .languages:after{
-    content: "";
-    
-    flex:auto; 
-} */
 
 .languages li {
     padding: 1em;
@@ -229,11 +222,7 @@ section h2{
 /* Portfolio */
 
 .portfolio_container{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.7em; */
-
-    /* background-color: red; */
+   
     display: flex;
     
     flex-direction: row;
@@ -249,10 +238,9 @@ section h2{
 .project_card{
     
     width: 100%;
-    /* height: 16em; */
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
+   
     background-color: var(--card-color);
     
     border-radius: 12px;
@@ -261,7 +249,7 @@ section h2{
     
     color: white;
     
-    /* padding: 1.4em; */
+    
     
     justify-self: revert;
 }
@@ -351,9 +339,7 @@ section h2{
 
 
 .lab_container{
-    /* display: grid;
-    grid-template-columns: 0.34fr 0.34fr 0.34fr; */
-
+  
     display: flex;
     flex-flow: row wrap;
     gap: 2em;
@@ -368,7 +354,7 @@ section h2{
 }
 
 .lab_card{
-    /* padding: 1em; */
+    
     background-color: var(--card-color);
     
     border-radius: 8px;
@@ -410,6 +396,7 @@ section h2{
 .threejs{
     margin-bottom: 4em;
 }    
+
 /* Daily UI */
 
 .daily_ui_p{
@@ -422,14 +409,6 @@ section h2{
 
 /* popup */
 
-/*
-    .popup_image
-
-    .popup_image img
-
-    .popip_image button
-
-*/
 
 .popup_image{
     display: flex;
@@ -516,6 +495,11 @@ footer{
     }
 }
 
+@media screen and (max-width: 541px) and (min-width: 395px) {
+    .about_me_section{
+        height: 18em;
+    }
+}
 @media screen and (max-width:610px) {
     .languages{
         height: 7em;
@@ -525,26 +509,18 @@ footer{
     
 }
 
-/* @media screen and (min-width: 610px) {
-    .about_me_section{
-        height: 12em;
-    }
-} */
 
 @media screen and (min-width: 768px) {
     
     .about_me_section{
-        /* background-color: red; */
-        height: 12em;
+       
+        height: 9em;
     
         padding: 5em 15%;
         
         margin: auto auto;
     
-        /* display:grid;
-    
-        grid-template-columns: 1fr 1fr; */
-    
+      
         
     }
 
@@ -621,7 +597,7 @@ footer{
     }
     
     .popup_image button{
-        /* width: 2%; */
+        
         margin-top: 1em;
         margin-right: 1em;
         
