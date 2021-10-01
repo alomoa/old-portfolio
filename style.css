@@ -82,6 +82,7 @@ button{
     --card-color: #34393F;
     --card-border: 1px solid #45484C;
     --card-shadow: 4px 4px 18px rgba(0, 0, 0, 0.62); 
+    --card-shadow-hover: 4px 4px 30px rgba(0, 0, 0, 0.62);
     --background-color: #141313;
 }
 
@@ -255,6 +256,7 @@ section h2{
 }
 
 .project_card img{
+    object-fit: contain;
     border-radius: 8px 8px 0 0;
 }
 
@@ -365,6 +367,7 @@ section h2{
 
 .lab_card:hover{
     transform: scale(1.05);
+    box-shadow: var(--card-shadow-hover) !important;
     border-radius: 8px;
 }
 
