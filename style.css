@@ -358,7 +358,8 @@ section h2{
 .lab_card{
     
     background-color: var(--card-color);
-    
+    color: #ffffff;
+    text-decoration: none;
     border-radius: 8px;
     box-shadow: var(--card-shadow);
     transition: transform 1s;
